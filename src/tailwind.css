@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.sticky-glass-navbar {
+		@apply bg-base-300/75 rounded-full max-w-5xl mx-auto mt-16 h-16 sticky top-0 z-50 backdrop-blur-sm transition-transform ease-in;
+	}
+}
+
+/* 
+bg-[#CCF381]
+text-[#4831D4] 
+*/
