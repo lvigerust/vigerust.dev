@@ -45,10 +45,10 @@
 <svelte:window bind:scrollY={currentY} />
 
 <div class="sticky-glass-navbar" class:motion-safe:-translate-y-full={offscreen} bind:clientHeight>
-	<div class="navbar mx-auto">
+	<div class="navbar mx-auto px-4 lg:min-h-[88px] lg:px-8">
 		<div class="navbar-start">
-			<div class="dropdown">
-				<label for="" tabindex="0" class="btn btn-ghost ">
+			<div class="dropdown md:hidden">
+				<label for="" tabindex="0" class="btn btn-ghost btn-circle ">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						class="h-5 w-5"
@@ -66,20 +66,26 @@
 				<ul
 					use:clickOutside
 					tabindex="0"
-					class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+					class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-primary rounded-box w-52"
 				>
 					<li><a href="/">Home</a></li>
 					<li><a href="/">About</a></li>
 					<li><a href="/">Projects</a></li>
 				</ul>
 			</div>
-			<a href="/" class="btn btn-ghost normal-case text-lg sm:text-xl md:hidden">VIGERUST</a>
+			<a href="/" class="btn btn-ghost rounded-full hidden md:flex normal-case text-lg ">VIGERUST</a
+			>
 		</div>
-		<div class="navbar-center hidden md:flex">
-			<a href="/" class="btn btn-ghost normal-case text-xl">VIGERUST</a>
+		<div class="navbar-center flex md:hidden">
+			<a href="/" class="btn btn-ghost normal-case text-lg">VIGERUST</a>
 		</div>
 		<div class="navbar-end">
-			<label class="swap swap-rotate mr-5 sm:mr-8">
+			<ul class="menu menu-horizontal p-0 hidden md:flex">
+				<li><a href="/">Home</a></li>
+				<li><a href="/">About</a></li>
+				<li><a href="/">Projects</a></li>
+			</ul>
+			<label class="swap swap-rotate btn-ghost btn-circle">
 				<!-- this hidden checkbox controls the state -->
 				<input
 					type="checkbox"
@@ -130,8 +136,6 @@
 					>
 				{/if}
 			</label>
-			<!-- svelte-ignore a11y-missing-attribute -->
-			<!-- <a class="btn btn-accent btn-sm sm:btn-md mr-3 xl:mr-0">Get started</a> -->
 		</div>
 	</div>
 </div>
