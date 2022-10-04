@@ -4,6 +4,9 @@
 
 @layer components {
 	.sticky-glass-navbar {
-		@apply bg-primary text-base-100 rounded-full mx-4 mt-4 lg:mx-auto lg:mt-12 max-w-5xl sticky top-[var(--header-top-margin)] lg:top-[var(--header-top-margin-lg)] z-50 backdrop-blur-sm transition-transform ease-in;
+		@apply bg-primary text-base-100 rounded-full 
+		mx-4 mt-4 lg:mx-auto lg:mt-12 max-w-5xl 
+		sticky z-50 transition-transform ease-in 
+		top-[var(--header-top-margin)] lg:top-[var(--header-top-margin-lg)];
 	}
 }

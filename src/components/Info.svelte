@@ -12,7 +12,9 @@
 				<div class="divider divider-horizontal" />
 				<div class="w-1/2">Currently doing Bsc. in Applied Data Technology at OsloMet.</div>
 			</div>
-			<button class="btn btn-secondary  rounded-lg btn-block">Get in touch</button>
+			<a href="mailto:l.vigerust@gmail.com">
+				<button class="btn btn-secondary  rounded-lg btn-block">Get in touch</button>
+			</a>
 		</div>
 	</div>
 </div>

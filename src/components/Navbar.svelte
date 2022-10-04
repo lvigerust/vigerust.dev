@@ -21,12 +21,9 @@
 		};
 	}
 
-	let darkActive = false;
-	if ($theme === darkTheme) {
-		darkActive = true;
-	} else {
-		darkActive = false;
-	}
+	let previousY = 0;
+	let currentY = 0;
+	let clientHeight = 0;
 
 	const deriveDirection = (y) => {
 		const direction = !previousY || previousY < y ? 'down' : 'up';
@@ -37,9 +34,12 @@
 	$: scrollDirection = deriveDirection(currentY);
 	$: offscreen = scrollDirection === 'down' && currentY > clientHeight * 4;
 
-	let previousY = 0;
-	let currentY = 0;
-	let clientHeight = 0;
+	let darkActive = false;
+	if ($theme === darkTheme) {
+		darkActive = true;
+	} else {
+		darkActive = false;
+	}
 </script>
 
 <svelte:window bind:scrollY={currentY} />
@@ -50,7 +50,7 @@
 	class:lg:motion-safe:-translate-y-[var(--header-with-margin-lg)]={offscreen}
 	bind:clientHeight
 >
-	<div class="navbar mx-auto px-4 lg:min-h-[5.5rem] lg:px-8">
+	<div class="navbar px-4 lg:px-8 lg:min-h-[5rem]">
 		<div class="navbar-start">
 			<div class="dropdown md:hidden">
 				<label for="" tabindex="0" class="btn btn-ghost btn-circle ">
