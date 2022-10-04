@@ -21,6 +21,13 @@
 		};
 	}
 
+	let darkActive = false;
+	if ($theme === darkTheme) {
+		darkActive = true;
+	} else {
+		darkActive = false;
+	}
+
 	const deriveDirection = (y) => {
 		const direction = !previousY || previousY < y ? 'down' : 'up';
 		previousY = y;
@@ -33,13 +40,6 @@
 	let previousY = 0;
 	let currentY = 0;
 	let clientHeight = 0;
-
-	let darkActive = false;
-	if ($theme === darkTheme) {
-		darkActive = true;
-	} else {
-		darkActive = false;
-	}
 </script>
 
 <svelte:window bind:scrollY={currentY} />
@@ -66,7 +66,7 @@
 				<ul
 					use:clickOutside
 					tabindex="0"
-					class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-primary font-[Roboto] rounded-box w-52"
+					class="menu menu-compact dropdown-content mt-3.5 p-2 shadow bg-primary font-[Roboto] rounded-box w-52"
 				>
 					<li><a href="/">Home</a></li>
 					<li><a href="/">About</a></li>
