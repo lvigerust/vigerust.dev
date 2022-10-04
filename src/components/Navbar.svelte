@@ -66,24 +66,29 @@
 				<ul
 					use:clickOutside
 					tabindex="0"
-					class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-primary rounded-box w-52"
+					class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-primary font-[Roboto] rounded-box w-52"
 				>
 					<li><a href="/">Home</a></li>
 					<li><a href="/">About</a></li>
 					<li><a href="/">Projects</a></li>
 				</ul>
 			</div>
-			<a href="/" class="btn btn-ghost rounded-full hidden md:flex normal-case text-lg ">VIGERUST</a
+			<a
+				href="/"
+				class="btn btn-ghost rounded-full hidden md:flex normal-case text-base lg:text-lg "
+				>VIGERUST</a
 			>
 		</div>
 		<div class="navbar-center flex md:hidden">
-			<a href="/" class="btn btn-ghost normal-case text-lg">VIGERUST</a>
+			<a href="/" class="btn btn-ghost normal-case text-base">VIGERUST</a>
 		</div>
 		<div class="navbar-end">
-			<ul class="menu menu-horizontal p-0 hidden md:flex">
-				<li><a href="/">Home</a></li>
-				<li><a href="/">About</a></li>
-				<li><a href="/">Projects</a></li>
+			<ul class="menu menu-horizontal p-0 hidden md:flex font-[Roboto]">
+				<li><a class="btn btn-ghost normal-case font-normal text-base" href="/">Home</a></li>
+				<li><a class="btn btn-ghost normal-case font-normal text-base" href="/">About</a></li>
+				<li>
+					<a class="btn btn-ghost normal-case font-normal text-base mr-2" href="/">Projects</a>
+				</li>
 			</ul>
 			<label class="swap swap-rotate btn-ghost btn-circle">
 				<!-- this hidden checkbox controls the state -->
