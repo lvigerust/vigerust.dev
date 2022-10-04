@@ -46,7 +46,8 @@
 
 <div
 	class="sticky-glass-navbar"
-	class:motion-safe:-translate-y-[var(--header-with-margin-lg)]={offscreen}
+	class:motion-safe:-translate-y-[var(--header-with-margin)]={offscreen}
+	class:lg:motion-safe:-translate-y-[var(--header-with-margin-lg)]={offscreen}
 	bind:clientHeight
 >
 	<div class="navbar mx-auto px-4 lg:min-h-[5.5rem] lg:px-8">
