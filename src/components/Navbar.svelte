@@ -44,8 +44,12 @@
 
 <svelte:window bind:scrollY={currentY} />
 
-<div class="sticky-glass-navbar" class:motion-safe:-translate-y-full={offscreen} bind:clientHeight>
-	<div class="navbar mx-auto px-4 lg:min-h-[88px] lg:px-8">
+<div
+	class="sticky-glass-navbar"
+	class:motion-safe:-translate-y-[var(--header-with-margin-lg)]={offscreen}
+	bind:clientHeight
+>
+	<div class="navbar mx-auto px-4 lg:min-h-[5.5rem] lg:px-8">
 		<div class="navbar-start">
 			<div class="dropdown md:hidden">
 				<label for="" tabindex="0" class="btn btn-ghost btn-circle ">
