@@ -5,12 +5,12 @@
 			<p class="py-8">
 				I like to craft solid and scalable frontend products with great user experiences.
 			</p>
-			<div class="flex w-full py-8">
+			<div class="flex w-full pt-4 pb-8">
 				Highly skilled at progressive enhancement, design systems & UI Engineering.
 				<div class="divider divider-horizontal" />
 				Over a decade of experience building products for clients across several countries.
 			</div>
-			<button class="btn btn-warning btn-outline btn-block">Get in touch</button>
+			<button class="btn btn-secondary  rounded-lg btn-block">Get in touch</button>
 		</div>
 	</div>
 </div>

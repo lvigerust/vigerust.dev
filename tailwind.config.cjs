@@ -12,14 +12,14 @@ module.exports = {
 			{
 				mytheme: {
 					primary: '#CCF381',
-					secondary: '#D926A9',
-					accent: '#1FB2A6',
+					secondary: '#2dd4bf',
+					accent: '#d8b4fe',
 					neutral: '#191D24',
 					'base-100': '#4831D4',
 					info: '#3ABFF8',
 					success: '#36D399',
 					warning: '#FBBD23',
-					error: '#F87272'
+					error: '#E26D5C'
 				}
 			},
 			'dark',
