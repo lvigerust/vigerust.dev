@@ -12,8 +12,8 @@
 				<div class="divider divider-horizontal" />
 				<div class="w-1/2">Currently doing Bsc. in Applied Data Technology at OsloMet.</div>
 			</div>
-			<a href="mailto:l.vigerust@gmail.com">
-				<button class="btn btn-secondary  rounded-lg btn-block">Get in touch</button>
+			<a href="mailto:l.vigerust@gmail.com" target="_blank" rel="noopener noreferrer">
+				<button class="btn btn-secondary  rounded-lg btn-block">Send me an Email</button>
 			</a>
 		</div>
 	</div>

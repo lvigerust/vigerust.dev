@@ -12,7 +12,7 @@
 	}
 </script>
 
-<footer class="footer footer-center p-12 bg-base text-base-content">
+<footer class="footer footer-center p-12 bg-base-300 text-base-content">
 	<div>
 		<p
 			class:selected={message === 'Copy'}
