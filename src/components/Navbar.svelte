@@ -53,7 +53,7 @@
 	<div class="navbar px-4 lg:px-8 lg:min-h-[5rem]">
 		<div class="navbar-start">
 			<div class="dropdown md:hidden">
-				<label for="" tabindex="0" class="btn btn-ghost btn-circle ">
+				<label for="" tabindex="0" class="btn btn-ghost btn-circle opacity-80 ">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						class="h-5 w-5"
@@ -71,7 +71,7 @@
 				<ul
 					use:clickOutside
 					tabindex="0"
-					class="menu menu-compact dropdown-content mt-3.5 p-2 shadow bg-primary font-[Roboto] rounded-box w-52"
+					class="menu menu-compact dropdown-content mt-3.5 p-2 shadow bg-primary font-[Poppins] rounded-box w-52"
 				>
 					<li><a href="/">Home</a></li>
 					<li><a href="/">About</a></li>
@@ -80,22 +80,25 @@
 			</div>
 			<a
 				href="/"
-				class="btn btn-ghost rounded-full hidden md:flex normal-case text-base lg:text-lg "
+				class="btn btn-ghost rounded-full hidden md:flex normal-case text-base lg:text-lg opacity-90  "
 				>VIGERUST</a
 			>
 		</div>
 		<div class="navbar-center flex md:hidden">
-			<a href="/" class="btn btn-ghost normal-case text-base">VIGERUST</a>
+			<a href="/" class="btn btn-ghost normal-case text-base opacity-90">VIGERUST</a>
 		</div>
 		<div class="navbar-end">
-			<ul class="menu menu-horizontal p-0 hidden md:flex font-[Roboto]">
-				<li><a class="btn btn-ghost normal-case font-normal text-base" href="/">Home</a></li>
-				<li><a class="btn btn-ghost normal-case font-normal text-base" href="/">About</a></li>
+			<ul class="menu menu-horizontal p-0 hidden md:flex font-[Poppins] normal-case opacity-80">
 				<li>
-					<a class="btn btn-ghost normal-case font-normal text-base mr-2" href="/">Projects</a>
+					<a class="btn btn-ghost font-normal normal-case" href="/">Home</a>
+				</li>
+				<li><a class="btn btn-ghost font-normal normal-case" href="/">About</a></li>
+
+				<li>
+					<a class="btn btn-ghost font-normal normal-case mr-2" href="/">Projects</a>
 				</li>
 			</ul>
-			<label class="swap swap-rotate btn-ghost btn-circle">
+			<label class="swap swap-rotate btn-ghost btn-circle opacity-75">
 				<!-- this hidden checkbox controls the state -->
 				<input
 					type="checkbox"

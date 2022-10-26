@@ -1,4 +1,4 @@
-<div class="hero min-h-[calc(100vh-80px)] lg:min-h-[calc(100vh-136px)] bg-base-100 px-4">
+<div class="hero min-h-[calc(100vh-82px)] lg:min-h-[calc(100vh-130px)] bg-base-100 px-4">
 	<div class="hero-content text-start">
 		<div class="max-w-md">
 			<h1 class="text-5xl font-bold text-primary">Frontend Developer.</h1>
@@ -12,9 +12,9 @@
 				<div class="divider divider-horizontal" />
 				<div class="w-1/2">Currently doing Bsc. in Applied Data Technology at OsloMet.</div>
 			</div>
-			<a href="mailto:l.vigerust@gmail.com" target="_blank" rel="noopener noreferrer">
+			<!-- <a href="mailto:l.vigerust@gmail.com" target="_blank" rel="noopener noreferrer">
 				<button class="btn btn-secondary  rounded-lg btn-block">Send me an Email</button>
-			</a>
+			</a> -->
 		</div>
 	</div>
 </div>
