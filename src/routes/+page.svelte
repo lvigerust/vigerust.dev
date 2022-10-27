@@ -1,7 +1,15 @@
+<script>
+	import Contact from '../components/Contact.svelte';
+	import Info from '../components/Info.svelte';
+	import Projects from '../components/Projects.svelte';
+</script>
+
 <svelte:head>
 	<title>Home | Vigerust</title>
 </svelte:head>
 
-<div class="min-h-screen bg-base-200 flex items-center justify-center">
-	<h2 class="text-3xl font-semibold font-[Roboto]">Coming soon.</h2>
+<div>
+	<Info />
+	<Projects />
+	<Contact />
 </div>

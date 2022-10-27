@@ -32,7 +32,7 @@
 	};
 
 	$: scrollDirection = deriveDirection(currentY);
-	$: offscreen = scrollDirection === 'down' && currentY > clientHeight * 4;
+	$: offscreen = scrollDirection === 'down' && currentY > clientHeight * 2;
 
 	let darkActive = false;
 	if ($theme === darkTheme) {
