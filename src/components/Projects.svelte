@@ -7,6 +7,8 @@
 	onMount(() => {
 		let animateCards = document.querySelector('.projects').children;
 
+		animate(animateCards, { y: 500, opacity: 0 });
+
 		inView(
 			'.motion-viewport',
 			(info) => {
@@ -14,7 +16,7 @@
 
 				animate(
 					animateCards,
-					{ y: -208 },
+					{ y: [500, 0], opacity: 1 },
 					{
 						delay: stagger(0.15),
 						duration: 1,
@@ -22,7 +24,7 @@
 					}
 				);
 			},
-			{ margin: '0% 0% -30% 0%' }
+			{ amount: 0.5 }
 		);
 	});
 </script>
@@ -35,7 +37,7 @@
 				These are some of my projects. My main ambition is to create intuitive and modern interfaces
 				with recognizeable features.
 			</p>
-			<div class="projects flex flex-wrap gap-x-14 gap-y-4 justify-center top-52 relative">
+			<div class="projects flex flex-wrap gap-x-14 gap-y-4 justify-center">
 				<ProjectCard
 					title="Movie Database"
 					description="Movie database powered by TMDB API to get movie information. Developed with SvelteKit."
