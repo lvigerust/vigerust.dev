@@ -53,7 +53,7 @@
 	<div class="navbar px-4 lg:px-8 lg:min-h-[5rem]">
 		<div class="navbar-start">
 			<div class="dropdown md:hidden">
-				<label for="" tabindex="0" class="btn btn-ghost btn-circle opacity-80 ">
+				<label for="" tabindex="0" class="btn btn-ghost btn-circle opacity-80">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						class="h-5 w-5"
@@ -80,12 +80,28 @@
 			</div>
 			<a
 				href="/"
-				class="btn btn-ghost rounded-full hidden md:flex normal-case text-base lg:text-lg opacity-90  "
-				>VIGERUST</a
+				class="btn btn-ghost rounded-full hidden md:flex flex-col gap-4 normal-case text-base lg:text-lg opacity-75"
 			>
+				{#if darkActive}
+					<img class="h-full object-contain " src="/new1.png" alt="Vigerust Webutvikling" />
+				{:else}
+					<img class="h-full object-contain " src="/new.png" alt="Vigerust Webutvikling" />
+				{/if}
+				<p class="pt-1">VIGERUST</p>
+			</a>
 		</div>
-		<div class="navbar-center flex md:hidden">
-			<a href="/" class="btn btn-ghost normal-case text-base opacity-90">VIGERUST</a>
+		<div class="navbar-center w-1/3 flex justify-center md:hidden">
+			<a
+				href="/"
+				class="btn btn-ghost btn-circle px-0 normal-case text-base opacity-75 flex flex-col gap-3"
+			>
+				{#if darkActive}
+					<img class="h-full object-contain " src="/new1.png" alt="Vigerust Webutvikling" />
+				{:else}
+					<img class="h-full object-contain " src="/new.png" alt="Vigerust Webutvikling" />
+				{/if}
+				<!-- <p class="pt-1">VIGERUST</p> -->
+			</a>
 		</div>
 		<div class="navbar-end">
 			<ul class="menu menu-horizontal p-0 hidden md:flex font-[Poppins] normal-case opacity-80">
