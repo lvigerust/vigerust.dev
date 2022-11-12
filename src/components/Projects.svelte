@@ -7,16 +7,16 @@
 	onMount(() => {
 		let animateCards = document.querySelector('.projects').children;
 
-		animate(animateCards, { y: 500, opacity: 0 });
+		animate(animateCards, { x: 500, opacity: 0 });
 
 		inView(
 			'.motion-viewport',
 			(info) => {
-				console.log('The link  ', info.target.id, ' has entered the viewport');
+				// console.log('The link  ', info.target.id, ' has entered the viewport');
 
 				animate(
 					animateCards,
-					{ y: [500, 0], opacity: 1 },
+					{ x: [500, 0], opacity: 1 },
 					{
 						delay: stagger(0.15),
 						duration: 1,
@@ -29,9 +29,9 @@
 	});
 </script>
 
-<div class="hero min-h-screen bg-base-200 py-8">
+<div class="hero min-h-screen bg-base-200 py-8 overflow-hidden" id="projects">
 	<div class="hero-content text-center">
-		<div class="max-w-md md:max-w-7xl motion-viewport ">
+		<div class="max-w-md md:max-w-7xl motion-viewport">
 			<h1 class="text-5xl font-bold text-primary">Projects</h1>
 			<p class="pt-6 pb-12 lg:pb-16 max-w-sm sm:max-w-lg mx-auto">
 				These are some of my projects. My main ambition is to create intuitive and modern interfaces

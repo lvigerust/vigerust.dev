@@ -74,8 +74,8 @@
 					class="menu menu-compact dropdown-content mt-3.5 p-2 shadow bg-primary font-[Poppins] rounded-box w-52"
 				>
 					<li><a href="/">Home</a></li>
-					<li><a href="/">About</a></li>
-					<li><a href="/">Projects</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</div>
 			<a
@@ -92,10 +92,11 @@
 				<li>
 					<a class="btn btn-ghost font-normal normal-case" href="/">Home</a>
 				</li>
-				<li><a class="btn btn-ghost font-normal normal-case" href="/">About</a></li>
-
 				<li>
-					<a class="btn btn-ghost font-normal normal-case mr-2" href="/">Projects</a>
+					<a class="btn btn-ghost font-normal normal-case" href="#projects">Projects</a>
+				</li>
+				<li>
+					<a class="btn btn-ghost font-normal normal-case mr-2" href="#contact">Contact</a>
 				</li>
 			</ul>
 			<label class="swap swap-rotate btn-ghost btn-circle opacity-75">

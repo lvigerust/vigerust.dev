@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-	<title>Home | Vigerust</title>
+	<title>Vigerust Webutvikling</title>
 </svelte:head>
 
 <div>
