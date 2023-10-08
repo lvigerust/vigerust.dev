@@ -1,0 +1,21 @@
+@font-face {
+	font-family: 'Inter';
+	src: url('/fonts/Inter-VariableFont_slnt,wght.ttf');
+}
+@font-face {
+	font-family: 'Lexend';
+	src: url('/fonts/Lexend-VariableFont_wght.ttf');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+	@apply scroll-smooth bg-slate-900 text-slate-400;
+}
+
+html,
+body {
+	@apply h-full;
+}
