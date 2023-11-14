@@ -6,6 +6,7 @@
 	<title>vigerust.dev</title>
 </svelte:head>
 
+hei fra m1
 <main>
 	<slot />
 </main>
