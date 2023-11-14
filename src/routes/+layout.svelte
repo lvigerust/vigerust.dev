@@ -6,7 +6,7 @@
 	<title>vigerust.dev</title>
 </svelte:head>
 
-hei fra m1
+hei fra m2!
 <main>
 	<slot />
 </main>
