@@ -6,11 +6,8 @@ export default {
 			fontFamily: {
 				sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system'],
 				Display: ['Lexend', 'ui-sans-serif', 'system-ui', '-apple-system']
-			},
-			maxWidth: {
-				'8xl': '88rem'
 			}
 		}
 	},
-	plugins: []
+	plugins: [require('@tailwindcss/typography'), require('@tailwindcss/forms')]
 }

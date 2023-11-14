@@ -12,10 +12,9 @@
 @tailwind utilities;
 
 html {
-	@apply scroll-smooth bg-slate-900 text-slate-400;
+	@apply scroll-smooth;
 }
 
-html,
 body {
-	@apply h-full;
+	@apply bg-zinc-900 text-zinc-400 antialiased leading-relaxed;
 }

@@ -6,6 +6,6 @@
 	<title>vigerust.dev</title>
 </svelte:head>
 
-<main class="grid place-content-center h-full">
+<main>
 	<slot />
 </main>
